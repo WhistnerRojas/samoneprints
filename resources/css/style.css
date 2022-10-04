@@ -118,7 +118,7 @@
 
 .items:nth-child(1) {
   grid-area: one;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid1.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid1.PNG");
   color: aliceblue;
   background-size: cover;
   background-repeat: no-repeat;
@@ -126,13 +126,13 @@
 }
 
 .items:nth-child(1):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid11.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid11.PNG");
   transition: background-image .5s;
 }
 
 .items:nth-child(2) {
   grid-area: two;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid2.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid2.PNG");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(179,179,179);
@@ -142,13 +142,13 @@
 }
 
 .items:nth-child(2):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid22.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid22.PNG");
   transition: background-image .5s;
 }
 
 .items:nth-child(3) {
   grid-area: three;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid3.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid3.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,13 +157,13 @@
 }
 
 .items:nth-child(3):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid33.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid33.PNG");
   transition: background-image .5s;
 }
 
 .items:nth-child(4) {
   grid-area: four;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid4.PNG");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid4.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -173,13 +173,13 @@
 }
 
 .items:nth-child(4):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid44.png");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid44.png");
   transition: background-image .5s;
 }
 
 .items:nth-child(5) {
   grid-area: five;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid5.png");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid5.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,13 +188,13 @@
 }
 
 .items:nth-child(5):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid55.png");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid55.png");
   transition: background-image .5s;
 }
 
 .items:nth-child(6) {
   grid-area: six;
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/grid6.png");
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid6.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +203,7 @@
 }
 
 .items:nth-child(6):hover {
-  background-image: url("https://github.com/WhistnerRojas/samoneprints/blob/master/resources/images/");  
+  background-image: url("https://whistnerrojas.github.io/samoneprints/resources/images/grid66.png");  
   transition: background-image .5s;
 }
 
