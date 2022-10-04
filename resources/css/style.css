@@ -18,18 +18,21 @@
 .nav-sm{
     margin: 30px;
     margin-top: 30px;
+    display: inline;
 }
 
 .nav-sm img{
-  width: 15%;
+  width: 200px;
 }
 
-.nav-sm > span{
-    position:absolute;
+.span{
+    display: inline;
+    position: absolute;
     font-size:30px;
+    top: 8%;
+    right: 5%;
     cursor:pointer;
     color: rgba(0, 64, 148, 0.993);
-    right: 5%;
     background-color: rgba(0, 127, 201, 0.527);
     border-radius: 5px;
     padding: 5px 15px;
@@ -255,13 +258,13 @@
     }
 
     .nav-md img{
-      width: 50%;
-      margin-bottom: 80px;
+      width: 60%;
+      margin: 30px 0;
     }
 
     .nav-md a{
       text-decoration: none;
-      color: rgb(29, 21, 58);
+      color: rgb(0, 95, 219);
       font-weight: 600;
       margin: 10px;
       padding: 20px 20px;
@@ -277,7 +280,7 @@
 
   .content-container{
       width: 85%;
-      height: 99.5vh;
+      height: 99.4vh;
       margin: 2px 0 3px 0;
   }
 
@@ -298,7 +301,13 @@
   }
   
   .social{
-    margin-top: 100px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .social ul{
+    text-align: center;
+    padding: 0;
   }
 
   .social li{
@@ -306,7 +315,7 @@
   }
   .social a{
     padding: 0;
-    margin: 0 10px;
+    margin-left: 10px;
     color: rgb(233, 0, 213);
     font-size: 25px;
   }
