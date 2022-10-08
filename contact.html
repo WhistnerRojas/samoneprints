@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="resources/css/bootstrap.css">
     <link rel="shortcut icon" href="resources/images/icon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/adea17bdd0.js" crossorigin="anonymous"></script>
-    <script>
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
-
+    <script src="resources/js/mobilenav.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -27,11 +18,11 @@
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <a href="">HOME</a>
-                  <a href="#html" onclick="closeNav()">COLLECTION</a>
-                  <a href="#css" onclick="closeNav()">SERVICES</a>
-                  <a href="" onclick="closeNav()">ABOUT</a>
-                  <a href="" onclick="closeNav()">CONTACT</a>
+                  <a href="index.html">HOME</a>
+                  <a href="services.html" onclick="closeNav()">SERVICES</a>
+                  <a href="collection.html" onclick="closeNav()">COLLECTION</a>
+                  <a href="about.html" onclick="closeNav()">ABOUT</a>
+                  <a href="contact.html" onclick="closeNav()">CONTACT</a>
                 </div>
             </div>
             <div class="span">
@@ -40,11 +31,13 @@
         </div>
         <div class="nav-md">
           <img src="./resources/images/samone.png" >   
-          <a href="index.html">HOME</a>
-          <a href="collection.html">COLLECTION</a>
-          <a href="services.html">SERVICES</a>
-          <a href="about.html">ABOUT</a>
-          <a class="active" href="contact.html">CONTACT</a>
+          <div class="horizontal-nav">
+            <a href="index.html">HOME</a>
+            <a href="services.html">SERVICES</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="about.html">ABOUT</a>
+            <a class="active" href="contact.html">CONTACT</a>
+          </div>
           <div class="social">
             <ul>
               <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
@@ -53,52 +46,57 @@
             </ul>
           </div>
         </div>
-        <div class="content-container">
-          <div class="content-lg bg-contact text-light px-3 pe-4" style="height: 99.8vh;">
-            <div class="col-lg-6 mx-auto">
-              <h1 class="pt-5">Hi There!</h1>
-              <h2 class="mb-1 mt-2">Leave Us a Message</h2>
-              <form action="" method="">
-                <div class="d-flex flex-column">
-                  <div class="row g-3  my-4">
-                    <div class="col">
-                      <label for="exampleFormControlText" class="form-label">First name</label>
-                      <input type="text" class="form-control" placeholder="John Micheal" aria-label="First name">
+        <div class="content-container bg">
+          <div class="content-fluid text-light px-3 pe-4" style="height: 100%;">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                  <h1 class="pt-5">Hi There!</h1>
+                  <h2 class="mb-1 mt-2">Leave Us a Message</h2>
+                  <form action="" method="">
+                    <div class="d-flex flex-column">
+                      <div class="row g-3  my-4">
+                        <div class="col">
+                          <label for="exampleFormControlText" class="form-label">First name</label>
+                          <input type="text" class="form-control" placeholder="John Micheal" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <label for="exampleFormControlText" class="form-label">Last name</label>
+                          <input type="text" class="form-control" placeholder="Murphy" aria-label="Last name">
+                        </div>
+                      </div>
+                      <div class="row g-3">
+                        <div class="col">
+                          <label for="exampleFormControlemail" class="form-label">E-mail Address</label>
+                          <input type="email" class="form-control" placeholder="name@example.com" aria-label="name@example.com">
+                        </div>
+                        <div class="col">
+                          <label for="exampleFormControlText" class="form-label">Subject</label>
+                          <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+                        </div>
+                      </div>
+                      <div class="my-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell Us What You Want" rows="6"></textarea>
+                      </div>
                     </div>
-                    <div class="col">
-                      <label for="exampleFormControlText" class="form-label">Last name</label>
-                      <input type="text" class="form-control" placeholder="Murphy" aria-label="Last name">
+                    <div class="mx-auto ">
+                      <button type="submit" class="btn btn-primary my-3 px-5">Send</button>
                     </div>
-                  </div>
-                  <div class="row g-3">
-                    <div class="col">
-                      <label for="exampleFormControlemail" class="form-label">E-mail Address</label>
-                      <input type="email" class="form-control" placeholder="name@example.com" aria-label="name@example.com">
-                    </div>
-                    <div class="col">
-                      <label for="exampleFormControlText" class="form-label">Subject</label>
-                      <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
-                    </div>
-                  </div>
-                  <div class="my-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell Us What You Want" rows="6"></textarea>
+                  </form>
+                </div>
+                <div class="col-lg-8 col-md-10 mx-auto mb-5">
+                  <div class="text-contact">
+                    <p class="text-center fs-3">
+                      <i class="fa-sharp fa-solid fa-phone icon-contact"></i><span class="mx-3">(02) 842-3093</span></p>
+                    <p class="text-center fs-3">
+                      <i class="fa-sharp fa-solid fa-envelope icon-contact"></i><span class="mx-3">support@samoneprints.com</span>
+                    </p>
+                    <p class="text-center fs-4 mx-auto">
+                      <i class="fa-sharp fa-solid fa-map-location-dot icon-contact"></i><span class="mx-3">#36 St. Mary Avenue Corner Riverside DriveProvident Village Marikina City</span>
+                    </p>
                   </div>
                 </div>
-                <div class="mx-auto align-items-center">
-                  <button type="submit" class="btn btn-primary my-3 px-5">Send</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-9 mx-auto mt-5">
-              <p class="text-center fs-3 mt-5">
-                <i class="fa-sharp fa-solid fa-phone icon-contact"></i><span class="mx-3 text-contact">(02) 842-3093</span>
-                <i class="fa-sharp fa-solid fa-envelope icon-contact"></i><span class="mx-3 text-contact">support@samoneprints.com</span>
-              </p>
-              <p class="text-center fs-4 mx-auto">
-                <i class="fa-sharp fa-solid fa-map-location-dot icon-contact"></i><span class="mx-3 text-contact">#2 Directo st. Zone 4 BRGY. South Signal Village Taguig City, Metro Manila, Zip Code 1633</span>
-              </p>
-            </div>
+              </div>
           </div>
         </div>
     </div>
