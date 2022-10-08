@@ -107,7 +107,6 @@ background-color:rgb(255, 255, 255);
 
 .items{
 background-color: rgb(43, 128, 226);
-margin: 0 5px 0;
 min-height: 150px;
 }
 
@@ -115,18 +114,39 @@ min-height: 150px;
 margin: 5px 5px;
 }
 
+.inner-bg a{
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.473);
+  padding: 0 5px;
+}
+
+.inner-bg a:hover{
+  color: rgb(6, 139, 255);
+}
+
+.inner-h2-bg{
+  width:190px;
+}
+
+.inner-h2-bg h2{
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.473);
+  padding: 0 5px;
+}
+
+.inner-h2-bg a{
+  color: white;
+  text-decoration: none;
+}
+
 .items:nth-child(1) {
 grid-area: one;
 background-image: url('../images/grid1.PNG');
-color: aliceblue;
 background-size: cover;
 background-repeat: no-repeat;
 transition: background-image .5s;
-}
-
-.items:nth-child(1) > a{
-  text-decoration: none;
-  color: aliceblue;
+color: aliceblue;
 }
 
 .items:nth-child(2) {
@@ -134,14 +154,9 @@ grid-area: two;
 background-image: url('../images/grid2.PNG');
 background-size: cover;
 background-repeat: no-repeat;
-background-color: rgb(179,179,179);
 background-position: center;
 transition: background-image .5s;
-}
-
-.items:nth-child(2) > a{
-  text-decoration: none;
-  color: #fff;
+color: azure;
 }
 
 .items:nth-child(3) {
@@ -154,11 +169,6 @@ color: aquamarine;
 transition: background-image .5s;
 }
 
-.items:nth-child(3) > a{
-  text-decoration: none;
-  color: aquamarine;
-}
-
 .items:nth-child(4) {
 grid-area: four;
 background-image: url('../images/grid4.PNG');
@@ -166,13 +176,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 color: rgb(112, 209, 0);
-text-align: right;
 transition: background-image .5s;
-}
-
-.items:nth-child(4) > a{
-  text-decoration: none;
-  color: rgb(112, 209, 0);
 }
 
 .items:nth-child(5) {
@@ -185,9 +189,13 @@ color: bisque;
 transition: background-image .5s;
 }
 
-.items:nth-child(5) > a{
+.items:nth-child(5) > a, .items:nth-child(6) > a{
   text-decoration: none;
-  color: bisque;
+  color:#fff;
+}
+
+.items:nth-child(5) > a:hover, .items:nth-child(6) > a:hover{
+  color: rgb(6, 139, 255);
 }
 
 .items:nth-child(6) {
@@ -198,11 +206,6 @@ background-position: center;
 background-size: cover;
 color: rgb(255, 47, 193);
 transition: background-image .5s;
-}
-
-.items:nth-child(6) > a{
-  text-decoration: none;
-  color: rgb(255, 47, 193);
 }
 
 .content-container{
@@ -256,7 +259,6 @@ transition: background-image .5s;
   margin-left: 30px;
   margin-top: 10px;
 }
-
 
 }
 
@@ -473,6 +475,11 @@ width: 99.8%;
   transition: background-image .5s;
 }
 
+.content-container{
+  width: 88%;
+  margin: 5px 0;
+}
+
 .collection{
   width: 85%;
   height: 99.8vh;
@@ -531,4 +538,8 @@ width: 99.8%;
 /*collection page*/
 .collection{
   height: 100%;
+}
+
+.text-biege{
+  color: rgba(97, 97, 97, 0.452);
 }
