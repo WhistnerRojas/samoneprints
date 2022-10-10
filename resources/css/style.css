@@ -505,7 +505,7 @@ width: 99.8%;
 }
 
 
-/*overiding bootstrap rules*/
+/*overiding bootstrap rules or additional rules in each page*/
 
 /*contact page*/
 .bg{
@@ -546,3 +546,5 @@ width: 99.8%;
 .img-offcanvas{
   width: 60%;
 }
+/*end collection*/
+/*start services*/
