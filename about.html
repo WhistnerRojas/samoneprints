@@ -14,11 +14,10 @@
 <body>
     <div class="main-container">
         <div class="nav-sm">
-            <img src="resources/images/samone.png" />       
+          <a href="index.html"><img src="resources/images/samone.png" /></a>      
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <a href="">HOME</a>
                   <a href="index.html">HOME</a>
                   <a href="services.html" onclick="closeNav()">SERVICES</a>
                   <a href="collection.html" onclick="closeNav()">COLLECTION</a>
@@ -31,7 +30,7 @@
             </div>
         </div>
         <div class="nav-md">
-          <img src="./resources/images/samone.png" >   
+          <a href="index.html"><img src="resources/images/samone.png" /></a>   
           <div class="horizontal-nav">
             <a href="index.html">HOME</a>
             <a href="services.html">SERVICES</a>
@@ -47,8 +46,41 @@
             </ul>
           </div>
         </div>
-        <div class="content-container">
+        <div class="content-container collection">
+            <!--start content here-->
+
+            <div class="px-4 my-5 text-center border-bottom mx-auto">
+              <h1 class="display-4 fw-bold">Why Us?</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">We offer the Best Quality and we take pride in what we do.</p>
+              </div>
+              <div class="overflow-hidden" style="max-height: 50vh;">
+                <div class="container px-5">
+                  <img src="./resources/images/printing2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+              </div>
+            </div>
+
+            <div class="container col-xxl-12 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="./resources/images/change.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                  <h1 class="display-5 fw-bold lh-1 mb-3">Always changing for the better</h1>
+                  <p class="lead">We see opportunities to grow and achieve success sustainably. When orders are printed on demand, less leftover inventory winds up in landfills. It's our goal to make on-demand manufacturing the norm for a planet with finite resources and people with infinite ideas.</p>
+                </div>
+              </div>
+            </div>
             
+            <!--end-->
+            <div class="container-fluid bg-dark">
+              <div class="row"> <!--Footer-->
+                <div class="col mx-4 mt-4 text-white text-center">
+                  <p class="fs-5 mt-2"><i class="fa-regular fa-copyright"></i> <span class="text-info">SamOne Print Your Style</span> by Whistner Rojas for <i class="text-primary">Kodego Mini Project 1</i></p>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
     <script src="/resources/js/bootstrap.js"></script>
