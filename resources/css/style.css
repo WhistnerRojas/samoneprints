@@ -155,7 +155,7 @@ background-image: url('../images/grid2.PNG');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-transition: background-image .5s;
+transition: background-image .8s;
 color: azure;
 }
 
