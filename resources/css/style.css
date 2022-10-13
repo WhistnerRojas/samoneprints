@@ -101,13 +101,14 @@ grid-template-areas:
  'five'
  'six';
 height: 100vh;
-gap: 5px;
+gap: 7px;
 background-color:rgb(255, 255, 255);
 }
 
 .items{
 background-color: rgb(43, 128, 226);
 min-height: 150px;
+border-radius: 2px;
 }
 
 .items h2{
