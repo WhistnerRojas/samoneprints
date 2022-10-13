@@ -52,31 +52,46 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                   <h1 class="pt-5">Hi There!</h1>
                   <h2 class="mb-1 mt-2">Leave Us a Message</h2>
-                  <form action="" method="">
+                  <form action="" method="" class="row g-3 needs-validation" novalidate>
                     <div class="d-flex flex-column">
                       <div class="row g-3  my-4">
                         <div class="col">
-                          <label for="exampleFormControlText" class="form-label">First name</label>
-                          <input type="text" class="form-control" placeholder="John Micheal" aria-label="First name">
+                          <label for="validationCustom01" class="form-label">First name</label>
+                          <input id="validationCustom01" type="text" class="form-control" placeholder="John Micheal" aria-label="First name" required>
+                          <div class="invalid-feedback">
+                            Valid first name is required.
+                          </div>
                         </div>
                         <div class="col">
-                          <label for="exampleFormControlText" class="form-label">Last name</label>
-                          <input type="text" class="form-control" placeholder="Murphy" aria-label="Last name">
+                          <label for="validationCustom02" class="form-label">Last name</label>
+                          <input id="validationCustom02" type="text" class="form-control" placeholder="Murphy" aria-label="Last name" required>
+                          <div class="invalid-feedback">
+                            Valid last name is required.
+                          </div>
                         </div>
                       </div>
                       <div class="row g-3">
                         <div class="col">
-                          <label for="exampleFormControlemail" class="form-label">E-mail Address</label>
-                          <input type="email" class="form-control" placeholder="name@example.com" aria-label="name@example.com">
+                          <label for="validationCustom03" class="form-label">E-mail Address</label>
+                          <input id="validationCustom03" type="email" class="form-control" placeholder="name@example.com" aria-label="name@example.com" required>
+                          <div class="invalid-feedback">
+                            Valid Email Address is required.
+                          </div>
                         </div>
                         <div class="col">
-                          <label for="exampleFormControlText" class="form-label">Subject</label>
-                          <input type="text" class="form-control" placeholder="Subject" aria-label="Subject">
+                          <label for="validationCustom04" class="form-label">Subject</label>
+                          <input id="validationCustom04" type="text" class="form-control" placeholder="Subject" aria-label="Subject" required>
+                          <div class="invalid-feedback">
+                            Valid Subject is required.
+                          </div>
                         </div>
                       </div>
                       <div class="my-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell Us What You Want" rows="6"></textarea>
+                        <label for="validationCustom05" class="form-label">Message</label>
+                        <textarea id="validationCustom05" class="form-control" placeholder="Tell Us What You Want" rows="6" required></textarea>
+                        <div class="invalid-feedback">
+                          Valid Message is required.
+                        </div>
                       </div>
                     </div>
                     <div class="mx-auto ">
@@ -100,6 +115,6 @@
           </div>
         </div>
     </div>
-    <script src="/resources/js/bootstrap.js"></script>
+    <script src="./resources/js/bootstrap.min.js"></script>
 </body>
 </html>
