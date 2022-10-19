@@ -46,41 +46,39 @@
             </ul>
           </div>
         </div>
-        <div class="content-container">
-            <div class="grid-container">
-                <div class="items"> <!--1st child-->
-                    <div class="inner-bg">
-                      <h2><a href="create.html">Design Your T-shirt</a></h2>
-                    </div>
+        <div class="content-container content">
+            
+          <div class="container-fluid justify-content-center">
+            <div class="col-sm-10 mx-auto mt-5 mb-5 border rounded border-secondary bg-light border-opacity-10">
+              <div class="input-group mb-3 position-relative">
+                <input type="file" class="form-control" id="myFile" onchange="myFunction()">
+                <div class="position-absolute top-50 start-50 translate-middle text-muted createflex">
+                  <h3>Drop Files Here</h3>
+                  <h4>Or</h4>
+                  <h3>Click Here</h3>
                 </div>
-                <div class="items"> <!--2nd child-->
-                  <div class="inner-bg">
-                    <h2><a href="collection.html#best-seller">Our Best Seller</h2></a>
-                  </div>
-                </div>
-                <div class="items"> <!--3rd child-->
-                    <div class="inner-bg">
-                      <h2><a href="collection.html#browse-more">T-shirts</a></h1>
-                    </div>
-                </div>
-                <div class="items"> <!--4th child-->
-                  <div class="inner-bg">
-                    <h2><a href="collection.html#browse-more">Hoddie</a></h1>
-                  </div>
-                </div>
-                <div class="items"> <!--5th child-->
-                    <div class="inner-h2-bg">
-                      <h2><a href="services.html#deliver">We deliver Nationwide</a></h1>
-                    </div>
-                </div>
-                <div class="items"> <!--6th child-->
-                  <div class="inner-h2-bg">
-                    <h2><a href="services.html#bulk">We Accept Bulk Orders</a></h1>
-                  </div>
-                </div>
+              </div>
             </div>
+            <div class="col-8 mx-auto">
+              <p class="fs-4">Your Design : <span id="filename" class="fw-bold bg-white bg-gradient bg-opacity-10" style="display: inline-block;"></span></p>
+            </div>
+              <div class="col mx-auto upload" style="width: 100px;">
+                <button class="btn btn-primary fs-4">Submit</button>
+              </div>
+          </div>
+
         </div>
     </div>
+    <script>
+
+      function myFunction() {
+        let x = document.getElementById("myFile").value;
+        x =  x.slice(12);
+        document.getElementById("filename").innerHTML = x;
+        document.getElementById("filename").className += " px-2 py-1 border rounded";
+      }
+
+    </script>
     <script src="./resources/js/bootstrap.js"></script>
 </body>
 </html>
