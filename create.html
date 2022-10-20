@@ -90,10 +90,14 @@
       function myFunction() {
         let x = document.getElementById("myFile").value;
         let y =x.slice(x.indexOf(".")+1);
-        if( y == "jpeg" || y == "png" || y == "psd" || y =="jpg"){
+        if( y == "jpeg" || y == "png" || y == "psd" || y =="jpg" || y == "PNG" || y == "JPG"){
           x = x.slice(12);
           document.getElementById("filename").innerHTML = x;
           document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-white";
+        }
+        else if(x == ""){
+          document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-danger";
+          document.getElementById("filename").innerHTML ="-no image file selected.";
         }
         else{
           x = x.slice(12);
