@@ -79,7 +79,7 @@
               <p class="fs-4">Your Design : <span id="filename" class="" style="display: inline-block;"></span></p>
             </div>
               <div class="col mx-auto my-4 upload" style="width: 100px;">
-                <button class="btn btn-primary fs-4">Submit</button>
+                <button id="submit" class="btn btn-primary fs-4" disabled>Submit</button>
               </div>
           </div>
 
@@ -94,18 +94,23 @@
           x = x.slice(12);
           document.getElementById("filename").innerHTML = x;
           document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-white";
+          let disabled = document.getElementById("submit");
+          submit.removeAttribute('disabled');
         }
         else if(x == ""){
           document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-danger";
           document.getElementById("filename").innerHTML ="-no image file selected.";
+          let disabled = document.getElementById("submit");
+          disabled.setAttribute("disabled", "true");
         }
         else{
           x = x.slice(12);
           document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-danger";
           document.getElementById("filename").innerHTML = x + " -your file should be in an image format.";
+          let disabled = document.getElementById("submit");
+          disabled.setAttribute("disabled", "true");
         }
       }
-
     </script>
     <script src="./resources/js/bootstrap.js"></script>
 </body>
