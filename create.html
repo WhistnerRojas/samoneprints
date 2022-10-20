@@ -32,7 +32,7 @@
         <div class="nav-md">
           <a href="index.html"><img src="resources/images/samone.png" /></a>
             <div class="horizontal-nav">
-              <a class="active" href="index.html">HOME</a>
+              <a href="index.html">HOME</a>
               <a href="services.html">SERVICES</a>
               <a href="collection.html">COLLECTION</a>
               <a href="about.html">ABOUT</a>
@@ -46,12 +46,28 @@
             </ul>
           </div>
         </div>
-        <div class="content-container content">
+        <div class="content-container collection">
             
-          <div class="container-fluid justify-content-center">
+          <div class="container-fluid justify-content-center content">
+            <div class="row">
+              <div class="col-8 mx-auto mt-5">
+                <h2>Steps to Create your Own Design</h2>
+                <span>It is recommended that you do this task in your desktop computer or any other device with larger screen.</span>
+                <ol class="list-group list-group-numbered mt-2">
+                  <li class="list-group-item list-group-item-primary">Think of the design you want to achieve.</li>
+                  <li class="list-group-item list-group-item-secondary">Download an image of a plain <a href="https://www.google.com/search?q=plain+shirt&sxsrf=ALiCzsaA-GSoRFJEINAnFAwDflXDPVQDZQ:1666265956428&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjrmbyz3O76AhVXDd4KHZadBdYQ_AUoAnoECAIQBA&biw=1920&bih=969&dpr=1" target="_blank">shirt</a> or <a href="https://www.google.com/search?q=plain+hoodie&tbm=isch&ved=2ahUKEwiGot623O76AhVTTPUHHafCBucQ2-cCegQIABAA&oq=plain+hoddie&gs_lcp=CgNpbWcQARgAMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKMgcIABCABBAKOgQIIxAnOgQIABBDOgUIABCABDoICAAQgAQQsQNQxgdYyxtguyloAHAAeACAAc4BiAH9CpIBBjEuMTAuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=azNRY8bAENOY1e8Pp4WbuA4&bih=969&biw=1920" target="_blank">hoddie</a>.</li>
+                  <li class="list-group-item list-group-item-success">Visit <span class="fst-italic"><a href="https://www.canva.com/photo-editor/" target="_blank">https://www.canva.com/photo-editor/</a></span> to start editing.</li>
+                  <li class="list-group-item list-group-item-danger">Or  <span class="fst-italic"><a href="https://www.fotor.com/design/start/" target="_blank">https://www.fotor.com/design/start/</a></span></li>
+                  <li class="list-group-item list-group-item-warning">When you are done, make sure to save your work and download it.</li>
+                  <li class="list-group-item list-group-item-info">then, Upload your work below.</li>
+                  <li class="list-group-item list-group-item-secondary">and lastly click submit.</li>
+                </ol>
+                
+              </div>
+            </div>
             <div class="col-sm-10 mx-auto mt-5 mb-5 border rounded border-secondary bg-light border-opacity-10">
-              <div class="input-group mb-3 position-relative">
-                <input type="file" class="form-control" id="myFile" onchange="myFunction()">
+              <div class="input-group position-relative">
+                <input type="file" class="form-control" id="myFile" onchange="myFunction()" title="">
                 <div class="position-absolute top-50 start-50 translate-middle text-muted createflex">
                   <h3>Drop Files Here</h3>
                   <h4>Or</h4>
@@ -60,9 +76,9 @@
               </div>
             </div>
             <div class="col-8 mx-auto">
-              <p class="fs-4">Your Design : <span id="filename" class="fw-bold bg-white bg-gradient bg-opacity-10" style="display: inline-block;"></span></p>
+              <p class="fs-4">Your Design : <span id="filename" class="" style="display: inline-block;"></span></p>
             </div>
-              <div class="col mx-auto upload" style="width: 100px;">
+              <div class="col mx-auto my-4 upload" style="width: 100px;">
                 <button class="btn btn-primary fs-4">Submit</button>
               </div>
           </div>
@@ -73,9 +89,17 @@
 
       function myFunction() {
         let x = document.getElementById("myFile").value;
-        x =  x.slice(12);
-        document.getElementById("filename").innerHTML = x;
-        document.getElementById("filename").className += " px-2 py-1 border rounded";
+        let y =x.slice(x.indexOf(".")+1);
+        if( y == "jpeg" || y == "png" || y == "psd" || y =="jpg"){
+          x = x.slice(12);
+          document.getElementById("filename").innerHTML = x;
+          document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-white";
+        }
+        else{
+          x = x.slice(12);
+          document.getElementById("filename").className = "fw-bold bg-gradient bg-opacity-10 px-2 border rounded bg-danger";
+          document.getElementById("filename").innerHTML = x + " -your file should be in an image format.";
+        }
       }
 
     </script>
