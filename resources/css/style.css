@@ -109,36 +109,30 @@ background-color:rgb(255, 255, 255);
 background-color: rgb(43, 128, 226);
 min-height: 150px;
 border-radius: 2px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
 }
 
-.items h2{
-margin: 5px 5px;
+.items span{
+  background-color: rgba(0, 0, 0, 0.473);
+  margin: 5px 5px;
+  border-radius: 5px;
 }
 
-.inner-bg a{
+.inner-bg{
+  height: 100%;
+}
+
+.items a{
   color: white;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.473);
-  padding: 0 5px;
+  width: auto;
+  height: 100%;
 }
 
-.inner-bg a:hover{
-  color: rgb(6, 139, 255);
-}
-
-.inner-h2-bg{
-  width:190px;
-}
-
-.inner-h2-bg h2{
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.473);
-  padding: 0 5px;
-}
-
-.inner-h2-bg a{
-  color: white;
-  text-decoration: none;
+.items a:hover{
+  color: rgb(6, 255, 243);
 }
 
 .items:nth-child(1) {
@@ -190,14 +184,14 @@ color: bisque;
 transition: background-image .5s;
 }
 
-.items:nth-child(5) > a, .items:nth-child(6) > a{
+/* .items:nth-child(5) > a, .items:nth-child(6) > a{
   text-decoration: none;
   color:#fff;
 }
 
 .items:nth-child(5) > a:hover, .items:nth-child(6) > a:hover{
   color: rgb(6, 139, 255);
-}
+} */
 
 .items:nth-child(6) {
 grid-area: six;
