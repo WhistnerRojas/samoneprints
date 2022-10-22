@@ -224,12 +224,27 @@
                           <h6 class="my-0">Print Design</h6>
                         </div>
                         <span class="text-muted">Korean heart hand Gesture - Black</span>
-                      </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <span>Price</span>
-                        <strong>&#8369;600</strong>
-                      </li>
-                  </ul>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Quantity</h6>
+                          </div>
+                          <span class="text-muted col-2">
+                            <input type="number" name="" min="1" id="quantity" value="1" maxlength="1" class="form-control" oninput="totalPrice()">
+                          </span>
+                        </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                          <span>Price</span>
+                          <span id="totalPrice"><strong>&#8369;600</strong></span>
+                        </li>
+                    </ul> <!--Get total Price-->
+  
+                    <script>
+                      function totalPrice(){
+                        let quantity = document.getElementById("quantity").value;
+                        let price = 600;
+                        document.getElementById("totalPrice").innerHTML = "<strong>&#8369;" + quantity * price + "</strong>";
+                      }
+                    </script>
                   <!--end right side content-->
                     </div>
                   </div>
