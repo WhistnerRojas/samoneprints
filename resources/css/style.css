@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+img{
+  pointer-events: none;
+}
+
 .main-container{
   display: flex;
   flex-direction: column;
